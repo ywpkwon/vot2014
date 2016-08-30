@@ -1,4 +1,4 @@
-# Uber ATC assignment: Car Exercise
+# VOT 2014: Car Exercise
 
 ### Youngwook Paul Kwon, UC Berkeley
 
@@ -21,6 +21,6 @@ Please see my detailed report [HERE](report/report.html).
 >> optical_multiple_frame
 ````
 
-`output` : Output images will be saved in this folder.
+`output` : output images will be saved in this folder.
 
-`report` : Algorithm exaplanation.
+`report` : algorithm explanation.
