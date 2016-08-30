@@ -10,7 +10,7 @@ It was more fun than I expected and many things to think about. The input images
 
 ## Report
 
-Please see my detailed report [HERE](http://ywpkwon.github.io/uber-assigment).
+Please see my detailed report [HERE](http://ywpkwon.github.io/uber_assignment).
 Or see `report\report.html`. 
 
 ## Folders
