@@ -15,9 +15,12 @@ Please see my detailed report [HERE](report/report.html).
 ## Folders
 
 `car` : input images and ground truth.
+
 `code` : source codes. You can run `optical_multiple_frame.m` in MATLAB.
 ```` matlab
 >> optical_multiple_frame
 ````
+
 `output` : Output images will be saved in this folder.
+
 `report` : Algorithm exaplanation.
