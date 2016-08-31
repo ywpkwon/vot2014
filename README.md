@@ -8,12 +8,12 @@ It was more fun than I expected and many things to think about. The input images
 
 ## Report
 
-Please see "report.pdf" for detailed information.  Note that the report pdf includes animations. If animations do not work, please let me know.
+Please see [report.pdf](report.pdf) for detailed information.  Note that the report pdf includes animations. If animations do not work, please let me know.
 
 ## Folders
 
-`car` : input images and ground truth.
-`code` : source codes. You can run `optical_multiple_frame.m` in MATLAB.
-`output` : output images will be saved in this folder.
-`readme.md` : this file.
-`report.pdf` : my report.
+`car` : Input images and ground truth.
+`code` : Source codes. You can run `optical_multiple_frame.m` in MATLAB.
+`output` : Output images will be saved in this folder. Sub folders are for more visulization. You can ingnore them fow now.
+`readme.md` : This file.
+`report.pdf` : My report.
