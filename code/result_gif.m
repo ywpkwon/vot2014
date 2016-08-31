@@ -15,7 +15,6 @@ function result_gif()
 
         im = step(shapeInserter_b, im, int32(convert_frame_to_rect(framea)));
         im = step(shapeInserter_r, im, int32(convert_frame_to_rect(framet)));     
-%         F(:,:,:,i) = im;
         
         [A,map] = rgb2ind(im,256);
         if i == 1;
@@ -24,7 +23,6 @@ function result_gif()
             imwrite(A,map,'result.gif','gif','WriteMode','append','DelayTime',0);
         end
     end
-%     imwrite(F,'result.gif','DelayTime',0,'LoopCount',inf);
 end
 
 function rect = convert_frame_to_rect(frame1)

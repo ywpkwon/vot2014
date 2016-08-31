@@ -1,4 +1,7 @@
-function result_mask(result)
+function result_mask()
+
+result = load('result');
+result = result.result;
 
 prob_prev = zeros(272, 640);
 palette = imread(fullfile('..', 'car', sprintf('%08d.jpg',result.frames(1,1)))); 
@@ -16,6 +19,9 @@ for i=1:size(result.frames,1)
         [M, c_map]= rgb2ind(vis, c_map);
         imwrite(M, c_map, 'object.gif','gif','WriteMode','append','DelayTime',0)
     end
+    
+    fname = fullfile('..','output','palette', sprintf('%03d.jpg', i));
+    imwrite(vis, fname);
     
     % update
     im = imread(fullfile('..', 'car', sprintf('%08d.jpg',f))); 

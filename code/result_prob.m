@@ -1,8 +1,9 @@
-function result_prob(result)
+function result_prob()
 
+result = load('result');
+result = result.result;
 cm = colormap(hot(255));
 prob_prev = zeros(272, 640);
-F = uint8(zeros(272,640,3,size(result.frames,1)));
 iptsetpref('ImshowBorder','tight')
 figure;
 for i=1:size(result.frames,1)
@@ -30,16 +31,23 @@ for i=1:size(result.frames,1)
     frame = getframe(gcf);
     plotim = frame2im(frame);    
     
+    fname_prob = fullfile('..','output','prob', sprintf('%03d.jpg', i));
+    fname_prob_embed = fullfile('..','output','prob_embed', sprintf('%03d.jpg', i));
+    imwrite(im_prob, fname_prob);
+    imwrite(plotim, fname_prob_embed);
+    
     if i==1
         [M1, c_map1]= rgb2ind(im_prob,256);
         [M2, c_map2] = rgb2ind(plotim, 256, 'nodither');
         imwrite(M1, c_map1, 'prob.gif','gif','LoopCount',inf,'DelayTime',0)
         imwrite(M1, c_map2, 'prob_embed.gif','gif','LoopCount',inf,'DelayTime',0)
+        
     else
         [M1, c_map1]= rgb2ind(im_prob, c_map1);
         [M2, c_map2] = rgb2ind(plotim, c_map2, 'nodither');
         imwrite(M1, c_map1, 'prob.gif','gif','WriteMode','append','DelayTime',0)
         imwrite(M2, c_map2, 'prob_embed.gif','gif','WriteMode','append','DelayTime',0)
+        
     end
     
     % update

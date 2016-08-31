@@ -6,22 +6,14 @@
 
 It was more fun than I expected and many things to think about. The input images of a moving vehicle are from the 2014 Visual Object Tracking Challenge (http://www.votchallenge.net/vot2014/).  I tried to answer the original and the most obvious question: "where is the vehicle given its location in the first frame?." I will also discuss about "what is the pixel-level segmentation of the car in each frame?."
 
-<center> <img src="report/fig/00000145.jpg" style="width:200px;"/> <img src="report/fig/00000228.jpg" style="width:200px;"/> </center>
-
 ## Report
 
-Please see my detailed report [HERE](http://ywpkwon.github.io/uber_assignment).
-Or see `report\report.html`. 
+Please see "report.pdf" for detailed information.  Note that the report pdf includes animations. If animations do not work, please let me know.
 
 ## Folders
 
 `car` : input images and ground truth.
-
 `code` : source codes. You can run `optical_multiple_frame.m` in MATLAB.
-```` matlab
->> optical_multiple_frame
-````
-
 `output` : output images will be saved in this folder.
-
-`report` : algorithm explanation.
+`readme.md` : this file.
+`report.pdf` : my report.
