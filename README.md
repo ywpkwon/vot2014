@@ -24,10 +24,13 @@ Please see [report.pdf](report.pdf) for detailed information.  Note that the rep
 ## Some results for teaser
 
 ### Optical flows
-<center> <img src="fig\flow5.png" style="width:500px;"/> </center>
+<center> <img src="fig/flow5.png" style="width:500px;"/> </center>
 
 ### Weighted averaged image, `Palette` 
-<center> ![asdf](fig\object.gif) </center>
+<center> <img src="fig/object.gif"/> </center>
+<center> <img src="https://github.com/ywpkwon/vot2014/blob/master/fig/object.gif"/> </center>
+![asdf](https://github.com/ywpkwon/vot2014/blob/master/fig/flow1.png)
+<center> ![](fig/object.gif) </center>
 
 ### Object probability map
 This map represents how likely a pixel would be a part of target object. This map is just for visualization and not used to conclude bounding boxes. I expect to improve final bounding boxes by using this information.
