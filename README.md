@@ -15,9 +15,13 @@ Please see [report.pdf](report.pdf) for detailed information.  Note that the rep
 ## Folders
 
 `car` : Input images and ground truth.
+
 `code` : Source codes. You can run `optical_multiple_frame.m` in MATLAB.
+
 `output` : Output images will be saved in this folder. Sub folders are for more visulization. You can ingnore them fow now.
+
 `readme.md` : This file.
+
 `report.pdf` : My report.
 
 
@@ -32,7 +36,11 @@ Please see [report.pdf](report.pdf) for detailed information.  Note that the rep
 ### Object probability map
 This map represents how likely a pixel would be a part of target object. This map is just for visualization and not used to conclude bounding boxes. I expect to improve final bounding boxes by using this information.
 <center> <img src="fig\prob_map.png"/> </center>
+
+Probability map animation :
 <center> ![](fig/prob.gif) </center>
+
+Probability map animation over input video :
 <center> ![](fig/prob_embed.gif) </center>
 
 ## Result
